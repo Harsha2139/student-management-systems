@@ -6,17 +6,28 @@
 </head>
 <body>
 
-<h1>Student Management System</h1>
+    <h1>Student Management System</h1>
 
-<input type="text" id="name" placeholder="Student Name">
+    <h3>Total Students: <span id="count">0</span></h3>
 
-<button onclick="addStudent()">
-Add Student
-</button>
+    <input type="text" id="name" placeholder="Enter Student Name">
 
-<ul id="studentList"></ul>
+    <button onclick="addStudent()">Add Student</button>
 
-<script src="script.js"></script>
+    <button onclick="clearAll()">Clear All</button>
+
+    <br><br>
+
+    <input type="text"
+           id="search"
+           placeholder="Search Student"
+           onkeyup="searchStudent()">
+
+    <hr>
+
+    <ul id="studentList"></ul>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
